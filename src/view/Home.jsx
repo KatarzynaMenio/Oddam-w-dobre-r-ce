@@ -1,6 +1,5 @@
 import Navigation from "../components/Navigation.jsx";
 import Footer from "../components/Footer.jsx";
-import Start from "../components/Start.jsx";
 import Info from "../components/Info.jsx";
 import About from "../components/About.jsx";
 import FundAndOrg from "../components/FundAndOrg.jsx";
@@ -18,7 +17,6 @@ export default function Home() {
                 </div>
             </div>
             <div>
-                <Start/>
                 <Info/>
                 <About/>
                 <FundAndOrg/>

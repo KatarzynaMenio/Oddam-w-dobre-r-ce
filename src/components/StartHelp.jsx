@@ -2,7 +2,7 @@ import decoration_img from "../assets/Decoration.svg";
 import {Link} from "react-router-dom";
 export default function StartHelp() {
     return (
-        <div className="main-container">
+        <div className="main-container" id="start-section">
             <div className="main-content">
                 <h2 className="header-style" >Zacznij pomagać!<br/>
                     Oddaj niechciane rzeczy w zaufane ręce </h2>
