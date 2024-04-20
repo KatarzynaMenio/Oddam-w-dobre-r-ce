@@ -1,0 +1,22 @@
+.home-section-style {
+  width: 100%;
+
+  .home-section-img {
+    height: 100vh;
+    display: flex;
+
+    .home-section-background {
+      width: 980px;
+      background-image: url("src/assets/Home-hero-Image.jpg");
+      background-position: right;
+      background-size: cover;
+    }
+
+    .home-section-navi {
+      flex: 1 1 auto;
+      margin-right: 150px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

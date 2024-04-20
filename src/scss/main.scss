@@ -1,8 +1,12 @@
 @import "normalize-scss/sass/normalize";
 @import "settings/_fonts.scss";
 @import "settings/_colors.scss";
+@import "src/scss/style/_Navigation";
+@import "src/scss/style/_Home";
+@import "src/scss/style/_StartHelp";
 
 body {
   font-family: $font-base, $font-alt;
   margin: 0;
+  box-sizing: border-box;
 }
