@@ -1,0 +1,100 @@
+@import "src/scss/settings/_colors.scss";
+@import "src/scss/settings/_fonts.scss";
+
+.info-section {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  .info-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-size: 38px;
+      font-weight: 400;
+      line-height: 55px;
+      color: $color-darkgray;
+      letter-spacing: -0.76px;
+      margin: 55px 0 25px 0;
+    }
+
+    .header-decor {
+      display: flex;
+      width: 253px;
+      margin-bottom: 34px;
+    }
+
+  }
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 325px;
+    background-color: $color-light;
+
+    .single-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 165px;
+      margin: 0 86px 0 86px;
+
+      .single-img {
+        width: 83px;
+        height: 83px;
+        margin-bottom: 9px;
+      }
+
+      .single-header {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $color-darkgray;
+        margin: 0;
+      }
+
+      hr {
+        width: 70px;
+        margin-bottom: 9px;
+      }
+
+      .single-paragraph {
+        text-align: center;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-darkgray;
+      }
+    }
+  }
+
+  .info-button {
+    margin: 35px 0 93px 0;
+
+    .single-button {
+      width: 310px;
+      height: 120px;
+      font-weight: 200;
+      font-size: 36px;
+      line-height: 45px;
+      text-decoration: none;
+      color: $color-darkgray;
+      border: 1px solid $color-darkgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 22px;
+    }
+  }
+}
