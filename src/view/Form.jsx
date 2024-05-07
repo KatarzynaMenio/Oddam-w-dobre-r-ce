@@ -1,5 +1,5 @@
 import Navigation from "../components/Navigation.jsx";
-import Footer from "../components/Footer.jsx";
+import Contact from "../components/Contact.jsx";
 
 export default function Form() {
     return (
@@ -9,7 +9,7 @@ export default function Form() {
                 Form
             </div>
             <div className="footer-wrapper">
-                <Footer/>
+                <Contact/>
             </div>
         </div>
     )

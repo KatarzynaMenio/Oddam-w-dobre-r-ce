@@ -1,5 +1,4 @@
 import Navigation from "../components/Navigation.jsx";
-import Footer from "../components/Footer.jsx";
 import Info from "../components/Info.jsx";
 import About from "../components/About.jsx";
 import FundAndOrg from "../components/FundAndOrg.jsx";
@@ -22,10 +21,9 @@ export default function Home() {
                 <Info/>
                 <About/>
                 <FundAndOrg/>
-                <Contact/>
             </div>
             <div>
-                <Footer/>
+                <Contact/>
             </div>
         </div>
     )
