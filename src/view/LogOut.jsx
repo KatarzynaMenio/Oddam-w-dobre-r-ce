@@ -1,5 +1,5 @@
 import Navigation from "../components/Navigation.jsx";
-import Footer from "../components/Footer.jsx";
+
 
 export default function LogOut() {
     return (
@@ -8,9 +8,7 @@ export default function LogOut() {
                 <Navigation/>
                 LogOut
             </div>
-            <div className="footer-wrapper">
-                <Footer/>
-            </div>
+
         </div>
     )
 }
