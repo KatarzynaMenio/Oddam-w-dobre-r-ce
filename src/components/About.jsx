@@ -7,7 +7,7 @@ export default function About() {
             <div className="about-left-side">
                 <div className="about-content">
                     <h3>O nas</h3>
-                    <img src={decoration_img} alt="decoration" className="info-decor"/>
+                    <img src={decoration_img} alt="decoration"/>
                     <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                     <span><img src={signature} alt="signature"/></span>
                 </div>
