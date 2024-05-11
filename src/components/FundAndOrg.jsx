@@ -1,5 +1,4 @@
 import decoration_img from "../assets/Decoration.svg";
-import {Link} from "react-router-dom";
 import {useState} from "react";
 
 export default function FundAndOrg() {
