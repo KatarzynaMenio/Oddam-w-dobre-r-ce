@@ -3,13 +3,11 @@ import {useState} from "react";
 
 export default function FundAndOrg() {
 
-
     const fundationDescription = "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
 
     const organizationDescription = "W naszej bazie znajdziesz listę zweryfikowanych Organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
 
     const localsDescription = "W naszej bazie znajdziesz listę zweryfikowanych Lokalnych zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
-
 
     const fundationData = [
         {
@@ -74,50 +72,49 @@ export default function FundAndOrg() {
             description: "Cel i misja: Pomoc osobom najmłodszym dzieciom z dysfunkcjami ruchowymi.",
             items: "ubrania, środki apteczne",
         },
-
     ]
 
     const organizationData = [
         {
             id: 1,
-            title: "Fundacja 'Dbam o Zdrowie'",
-            description: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-            items: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
+            title: "Organizacja “Lorem Ipsum 1”",
+            description: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            items: "Egestas, sed, tempus",
         },
 
         {
             id: 2,
-            title: "Fundacja 'Dla dzieci'",
-            description: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
-            items: "ubrania, meble, zabawki",
+            title: "Organizacja “Lorem Ipsum 2”",
+            description: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+            items: "Ut, aliquam, purus, sit, amet",
         },
 
         {
             id: 3,
-            title: "Fundacja 'Bez domu'",
-            description: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-            items: "ubrania, jedzenie, ciepłe koce",
+            title: "Organizacja “Lorem Ipsum 3”",
+            description: "Scelerisque in dictum non consectetur a erat nam.",
+            items: "Scelerisque in dictum non consectetur a erat nam.",
         },
 
         {
             id: 4,
-            title: "Fundacja 'Pomagam'",
-            description: "Cel i misja: Pomoc dla osób potrzebujących.",
-            items: "ubrania, jedzenie, ciepłe koce, środki higieniczne",
+            title: "Organizacja “Lorem Ipsum 4”",
+            description: "Scelerisque in dictum non consectetur a erat nam.",
+            items: "Scelerisque in dictum non consectetur a erat nam.",
         },
 
         {
             id: 5,
-            title: "Fundacja 'Dbam o Rodzinę'",
-            description: "Cel i misja: Pomoc dla wielodzietnych rodzin.",
-            items: "ubrania, jedzenie, ciepłe koce, środki higieniczne, produkty dla dzieci",
+            title: "Organizacja “Lorem Ipsum 5”",
+            description: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+            items: "Ut, aliquam, purus, sit, amet",
         },
 
         {
             id: 6,
-            title: "Fundacja 'Dbam'",
-            description: "Cel i misja: Pomoc osobom w kryzysie bezdomności.",
-            items: "ubrania, jedzenie, ciepłe koce, środki higieniczne",
+            title: "Organizacja “Lorem Ipsum 6”",
+            description: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            items: "Egestas, sed, tempus",
         },
 
     ]
@@ -126,27 +123,25 @@ export default function FundAndOrg() {
     const localsData = [
         {
             id: 1,
-            title: "Fundacja 'Dbam o Zdrowie'",
-            description: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-            items: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
+            title: "Zbiórka “Lorem Ipsum 1”",
+            description: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            items: "Egestas, sed, tempus",
         },
 
         {
             id: 2,
-            title: "Fundacja 'Dla dzieci'",
-            description: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
-            items: "ubrania, meble, zabawki",
+            title: "Zbiórka “Lorem Ipsum 2”",
+            description: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+            items: "Ut, aliquam, purus, sit, amet",
         },
 
         {
             id: 3,
-            title: "Fundacja 'Bez domu'",
-            description: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-            items: "ubrania, jedzenie, ciepłe koce",
+            title: "Zbiórka “Lorem Ipsum 3”",
+            description: "Scelerisque in dictum non consectetur a erat nam.",
+            items: "Mi, quis, hendrerit, dolor",
         },
-
     ]
-
 
     const [description, setDescription] = useState(fundationDescription);
     const [data, setData] = useState(fundationData);
@@ -168,8 +163,6 @@ export default function FundAndOrg() {
         setData(localsData);
         setActiveBtn("locals");
     }
-
-
 
     return (
         <div id="fund-and-org-section" className="fund-and-org-section">
@@ -199,8 +192,6 @@ export default function FundAndOrg() {
                     ))}
                 </div> : ""
             }
-
-
         </div>
     )
 }
