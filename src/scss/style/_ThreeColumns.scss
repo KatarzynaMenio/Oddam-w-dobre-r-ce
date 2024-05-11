@@ -15,17 +15,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2%;
 
     .single-column {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 334px;
+      width: 100%;
       max-width: 100%;
       text-align: center;
       align-self: center;
-      margin: 0 150px 0 150px;
+      padding: 5%;
 
       span {
         font-size: 90px;
