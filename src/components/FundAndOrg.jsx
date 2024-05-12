@@ -180,14 +180,14 @@ export default function FundAndOrg() {
 
             {data ?
                 <div style={{width: "65%"}}>
-                    <h2>{description}</h2>
+                    <h2 className="header-description">{description}</h2>
                     {data.map((element) => (
-                        <div className="fundation-item" style={{borderBottom: "1px solid black"}} key={element.id}>
+                        <div className="fundation-item" key={element.id}>
                             <div>
-                                <h3>{element.title}</h3>
-                                <p>{element.description}</p>
+                                <h3 className="item-title">{element.title}</h3>
+                                <p className="item-paragraph">{element.description}</p>
                             </div>
-                            <span>{element.items}</span>
+                            <span className="item-info">{element.items}</span>
                         </div>
                     ))}
                 </div> : ""
