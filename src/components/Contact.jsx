@@ -38,8 +38,13 @@ export default function Contact() {
                         <div className="footer-box"></div>
                         <div className="footer-box">Copyright by Coders Lab</div>
                         <div className="footer-box footer-icons">
-                            <img src={facebook} alt="facebook"/>
-                            <img src={instagram} alt="instagram"/>
+                            <div className="media-icon">
+                                <img src={facebook} alt="facebook" />
+                            </div>
+                            <div className="media-icon">
+                                <img src={instagram} alt="instagram" />
+                            </div>
+
                         </div>
                     </div>
                 </div>
