@@ -1,5 +1,6 @@
 import decoration_img from "../assets/Decoration.svg";
 import {useState} from "react";
+import Pagination from "./Pagination.jsx";
 
 export default function FundAndOrg() {
 
@@ -178,20 +179,7 @@ export default function FundAndOrg() {
                 <button className={"single-button " + (activeBtn === "locals" ? 'active' : '')} onClick={handleLocals}>Lokalnym<br/>zbiórkom</button>
             </div>
 
-            {data ?
-                <div style={{width: "65%"}}>
-                    <h2 className="header-description">{description}</h2>
-                    {data.map((element) => (
-                        <div className="fundation-item" key={element.id}>
-                            <div>
-                                <h3 className="item-title">{element.title}</h3>
-                                <p className="item-paragraph">{element.description}</p>
-                            </div>
-                            <span className="item-info">{element.items}</span>
-                        </div>
-                    ))}
-                </div> : ""
-            }
+             <Pagination data={data} description={description}></Pagination>
         </div>
     )
 }

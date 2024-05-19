@@ -1,0 +1,80 @@
+@import "src/scss/settings/_colors.scss";
+@import "src/scss/settings/_fonts.scss";
+
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .pagination-style {
+    width: 65%;
+
+    .header-description {
+      padding-inline: 300px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 66px;
+    }
+
+    .fundation-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $color-darkgray;
+
+      .item-title {
+        margin: 34px 0 6px 0;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 31px;
+        font-family: $font-alt;
+      }
+
+      .item-paragraph {
+        margin: 0 0 31px 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        font-family: $font-alt;
+      }
+
+      .item-info {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        font-family: $font-alt;
+      }
+    }
+  }
+
+  .nav-pagination {
+    text-align: center;
+    .pagination {
+      display: flex;
+      margin-top: 63px;
+      padding-left: 0;
+
+      .page-link {
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+
+        .page-item {
+          text-decoration: none;
+          font-size: 18px;
+          color: inherit;
+        }
+      }
+
+      .active {
+        border: 1px solid $color-darkgray;
+        padding: 10px;
+      }
+    }
+  }
+}
+
