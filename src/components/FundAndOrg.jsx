@@ -1,14 +1,15 @@
 import decoration_img from "../assets/Decoration.svg";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Pagination from "./Pagination.jsx";
+import supabase from "../../configuration/supabaseClient.js";
 
 export default function FundAndOrg() {
 
-    const fundationDescription = "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
-
-    const organizationDescription = "W naszej bazie znajdziesz listę zweryfikowanych Organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
-
-    const localsDescription = "W naszej bazie znajdziesz listę zweryfikowanych Lokalnych zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
+    // const fundationDescription = "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
+    //
+    // const organizationDescription = "W naszej bazie znajdziesz listę zweryfikowanych Organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
+    //
+    // const localsDescription = "W naszej bazie znajdziesz listę zweryfikowanych Lokalnych zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
 
     const fundationData = [
         {
@@ -144,9 +145,32 @@ export default function FundAndOrg() {
         },
     ]
 
-    const [description, setDescription] = useState(fundationDescription);
+    const [description, setDescription] = useState([]);
     const [data, setData] = useState(fundationData);
     const [activeBtn, setActiveBtn] = useState("fundation")
+
+
+    useEffect(() => {
+        supabase
+            .from('main_description')
+            .select('*')
+            .order('order', { ascending: true })
+            .then((response) => {
+                console.log(response.data)
+                console.log(response.data.map((single) => (
+                    single.description
+                )))
+                if (response.error) {
+                    throw new Error("Unable to get main_description data " + response.error)
+                }
+                // setDescription(response.data)
+                const myData = response.data.map((single) => (
+                    single.description))
+
+
+                setDescription(myData[2])
+            })
+    }, []);
 
 
     const handleFundation = () => {

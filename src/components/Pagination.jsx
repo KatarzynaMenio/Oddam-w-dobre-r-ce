@@ -10,6 +10,11 @@ export default function Pagination({data, description}) {
     const nPage = Math.ceil(data.length / recordsPerPage);
     const numbers = [...Array(nPage + 1).keys()].slice(1);
 
+
+
+
+
+
     function changeCurrentPage(id, e) {
         e.preventDefault()
         setCurrnetPage(id)
